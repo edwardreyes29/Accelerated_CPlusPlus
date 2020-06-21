@@ -1,0 +1,40 @@
+<iostream> directive for sequential input-output
+
+<< output operator
+>> input operator
+
+std:: // standard library namespaces
+e.g iostream  standard header defines the names count and endl
+    -> std::cout, std::endl
+    -> std::cout refers to standard output stream
+
+    std::cout << "Hello, world" << std::endl;
+
+    -> std::endl ends current line of output. Any more output would appear on a new line.
+
+    std::endl is a manipulator, << does whatever the manipulator says to do and returns the given stream
+
+    :: scope operator
+    std::cout is a qualified names
+    (name of scope)::(name defined in scope)
+
+    std::cout means "the name cout that is in the namespace scope std"
+
+    std -> names from standard library are defined in the namespace std.
+
+    \n newline
+    \t tab
+    \b backspace
+    \" treat " as part of string
+    \' treat ' as part of string
+    \\ treat \ as part of string
+    
+    <iostream> header defines the library's input-output facilities
+
+    return 0 // success
+    non zero indicates failure
+
+    compile in terminal:
+
+    - g++ file.cpp
+    - run: ./a.out
