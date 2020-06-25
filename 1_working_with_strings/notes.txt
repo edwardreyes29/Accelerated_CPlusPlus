@@ -1,0 +1,29 @@
+std::endl -> moves cursor to a new line.
+
+std:string name; -> is a definition.
+
+null or empty, string with no value
+
+<< ouput operator
+>> input operator -> reads a string from the standard input and stores it a variable.
+
+Buffer:
+input-output library saves  its output in an internal data structure called a buffer, 
+which it uses to optimize output operations.
+
+To avoid overhead, of writing a response to each output request, the library uses the buffer to accumulate the 
+characters to be written, and flushes the buffer, bu writing its contents to the output device, only when necessary.
+
+Three events that cause the system to flush the buffer:
+    1. When buffer is full, the library will flush automatically.
+    2. If library is asked to read from the standard input stream, the library immediately
+        flushes the output buffer without waiting for the buffer to become full.
+    3. When we explicitly say to do so.
+
+    When program writes prompt to cout, the output goes into the buffer associated with the standard output stream.
+    When attempting to read from cin, it flushes the output buffer.
+
+    std::endl ends the line of the output, and then flushes the buffer, which forces the system to write to the output
+    stream immediately.
+
+
